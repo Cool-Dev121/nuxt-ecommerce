@@ -1,0 +1,61 @@
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@mixin size($number) {
+  width: $number;
+  height: $number;
+}
+@mixin roboto() {
+  font-family: "Roboto", sans-serif;
+}
+@mixin placeholder-input($color, $text-align) {
+  &[type='text']::-webkit-input-placeholder,
+  &[type='email']::-webkit-input-placeholder,
+  &[type='phone']::-webkit-input-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  &[type='text']::-moz-placeholder,
+  &[type='email']::-moz-placeholder,
+  &[type='phone']::-moz-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  /* webkit */
+  &[type='text']:-moz-placeholder,
+  &[type='email']:-moz-placeholder,
+  &[type='phone']:-moz-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  /* webkit */
+  &[type='text']:-ms-input-placeholder,
+  &[type='email']:-ms-input-placeholder,
+  &[type='phone']:-ms-input-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+}
+@mixin placeholder-textarea($color, $text-align) {
+  &::-webkit-input-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  /* webkit */
+  &::-moz-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  /* webkit */
+  &:-moz-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+  /* webkit */
+  &:-ms-input-placeholder {
+    text-align: $text-align;
+    color: $color;
+  }
+}

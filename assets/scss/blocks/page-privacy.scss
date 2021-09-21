@@ -1,0 +1,21 @@
+.page-privacy {
+  padding: 5rem 0 28rem;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  .red {
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+  }
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
