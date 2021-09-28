@@ -1,5 +1,12 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  env: {
+    baseUrl: process.env.BASE_URL
+  },
+  server: {
+    port: process.env.PORT,
+    host: "localhost"
+  },
   head: {
     title: 'nuxt-ecommerce',
     htmlAttrs: {

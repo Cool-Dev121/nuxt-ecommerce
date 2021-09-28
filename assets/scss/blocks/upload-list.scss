@@ -1,0 +1,19 @@
+.upload-list {
+  margin-bottom: 4rem;
+  li {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    &.error {
+      color: white;
+      background-color: red;
+    }
+    strong {
+      margin-right: 2rem;
+    }
+  }
+}
