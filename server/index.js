@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const mediaRouter = require("./routes/media.router");
+const categoryRouter = require("./routes/caregory.router");
 
 const app = express();
 const { loadNuxt, build } = require("nuxt");
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use("/api/v1/media", mediaRouter);
+app.use("/api/v1/category", categoryRouter);
 
 mongoose.Schema.Types.Boolean.convertToFalse.add("");
 mongoose
